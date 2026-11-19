@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Admin Dashboard | Turon Corner</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="admin.css"></head>
+<body class="admin-body">
+  <header class="admin-header"><a class="brand" href="index.html"><span class="brand-mark">T</span><span>turon<span class="brand-accent">corner.</span><small>ADMINISTRATION</small></span></a><div><a class="back-link" href="index.html">← View website</a></div></header>
+  <main class="admin-main">
+    <div class="admin-title"><div><span class="eyebrow">STORE MANAGEMENT</span><h1>Dashboard</h1><p>Welcome! Here's what's happening at Turon Corner.</p></div><span class="demo-label">DEMO ADMIN</span></div>
+    <section class="stats-grid"><article class="stat-card"><span>Total orders</span><strong id="totalOrders">0</strong><small>All recorded orders</small></article><article class="stat-card"><span>Total sales</span><strong id="totalSales">₱0.00</strong><small>Based on placed orders</small></article><article class="stat-card"><span>Pending orders</span><strong id="pendingOrders">0</strong><small>Needs attention</small></article></section>
+    <section class="admin-panel"><div class="panel-heading"><div><h2>Customer orders</h2><p>Review and update incoming orders.</p></div><button class="outline-button" id="refreshOrders">Refresh</button></div><div class="table-wrap"><table><thead><tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Action</th></tr></thead><tbody id="ordersTable"></tbody></table></div><p class="empty-admin" id="emptyOrders">No orders yet. Place a test order on the customer website.</p></section>
+    <section class="admin-panel"><div class="panel-heading"><div><h2>Menu products</h2><p>Demo menu list. Product edits are saved in this browser only.</p></div></div><div id="adminProducts" class="admin-products"></div></section>
+    <p class="admin-warning">Important: This is a school-project demo. Orders are stored only in this browser's local storage. This dashboard has no real login, secure database, or online payment processing.</p>
+  </main>
+  <script src="admin.js"></script>
+</body></html>
